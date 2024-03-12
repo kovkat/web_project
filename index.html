@@ -3,60 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP</title>
 </head>
 <body>
     <div>
         <header>
-            <div>
-                <h1>Shoes shop</h1>
-                <a href="index.html">HOME</a>
-                <a href="">MEN</a>
-                <a href="">WOMEN</a>
-                <a href="about.html">ABOUT</a>
-                <form>
-                    Search<br>
-                    <input type='text' name='Search'><br>
-                </form>
+            <nav>
+                <img id="logo" src="img/logo.jpg" alt="logo">
+                    <a class="nav_" href="index.html">HOME</a>
+                    <a class="nav_" href="">MEN</a>
+                    <div id="dropdown">
+                        <a class="nav_" href="">WOMEN</a>
+                            <div id="dropdown-content">
+                                <a href="#">Туфлі</a>
+                                <a href="#">Босоніжки</a>
+                                <a href="#">Кросівки</a>
+                            </div>
+                    </div>
+                    <a class="nav_" href="about.html">ABOUT</a>
 
-                <div>
+                <form >
+                    <input id="search" type='text' name='Search'>
+                </form>
                     <img src="img/bask.png" alt="basket" width="50px">
-                </div>
-            </div> 
+            </nav> 
         </header>
 
         <main>
-            <div>
-                <h2>NEW COLLECTION</h2>
-                <div>
-                    <img src="img/main_sh.png" alt="main_sh" width="500px">
-                </div>
+            <div id="f1">
+                <h2 class="title" id="coll">NEW COLLECTION</h2>
+                <div><img id="m_f" src="img/main_sh.png" alt="main_sh" width="500px"></div>
             </div>
 
 
             <div>
                 <div>
-                    <h2>SALE</h2>
+                    <h2 class="title" id="sale">SALE</h2>
                 </div>
-                <div>
+                <div class="image-container" >
                     <div>
-                        <img src="img/foto1.png" alt="foto1" width="300px">
+                        <img class="photomain" src="img/foto1.png" alt="foto1" width="300px">
                     </div>
                     <div>
-                        <img src="img/foto2.png" alt="foto2" width="300px">
+                        <img class="photomain" src="img/foto2.png" alt="foto2" width="300px">
                     </div>
                     <div>
-                        <img src="img/foto3.png" alt="foto3" width="300px">
+                        <img class="photomain" src="img/foto3.png" alt="foto3" width="300px">
                     </div>
                     <div>
-                        <img src="img/foto4.png" alt="foto4" width="300px">
+                        <img class="photomain" src="img/foto4.png" alt="foto4" width="300px">
                     </div>
                 </div>
             </div>
 
             <div>
-                <table border="1">
+                <table >
                     <tr>
                       <th>Дні тижня</th>
                       <th>Години роботи</th> 
